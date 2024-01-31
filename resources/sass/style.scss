@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button, a, select, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.user-profile-block {
+    display: flex;
+    padding: 15px;
+    background: rgba(#000, 6%);
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        background: #000;
+        height: 200px;
+        width: 100%;
+        color: #fff;
+        padding: 25px;
+
+        .description {
+            margin-top: -10px;
+            font-size: 15px;
+        }
+
+        .logo {
+            font-weight: 400;
+            font-size: 35px;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 15px;
+
+            input {
+                border-radius: 10px;
+                height: 35px;
+                color: #000;
+                padding: 0 15px;
+
+                &::placeholder {
+                    color: rgba(0,0,0,.3);
+                }
+            }
+
+            button {
+                height: 35px;
+                background: #fff;
+                color: #000;
+                padding: 0 15px;
+                border-radius: 10px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        background: #fff;
+        height: fit-content;
+        margin-top: -30px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        padding: 35px 25px;
+        padding-bottom: 150px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 25px;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+
+        svg {
+            height: 22px;
+            width: 22px;
+            stroke: #000;
+        }
+
+        .plus {
+            height: 45px;
+            width: 45px;
+            stroke: #fff;
+            background: #000;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0px 4px 9px rgba(0,0,0,.6);
+        }
+        .profile {
+            width: 35px;
+        }
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product {
+        width: 47%;
+        margin: 0 0 25px 0;
+
+        .title {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 10px 0 0px 0;
+        }
+        .prices {
+            font-size: 14px;
+        }
+    }
+
+    .block-title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .product-page {
+        h1 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .buttons-shop {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            
+            button {
+                margin-bottom: 7px;
+            }
+        }
+
+        .product-image {
+            height: 250px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .btn {
+        height: 45px;
+        width: 100%;
+        font-weight: 600;
+        border-radius: 4px;
+        transition: .3s ease;
+
+        &.btn-primary {
+            color: #fff;
+            background-color: #00aeef;
+            cursor: pointer;
+            display: inline-block;
+            outline: 0;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            text-overflow: ellipsis;
+
+            &:hover {
+                background: #23c3ff;
+            }
+
+            &:active {
+                background-color: #009bd6;
+                transform: scale(.99);
+            }
+
+            &:focus {
+                background-color: #008abd;
+            }
+        }
+
+        &.btn-vip {
+            color: #fff;
+            background-color: #001117;
+            cursor: pointer;
+            display: inline-block;
+            outline: 0;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            text-overflow: ellipsis;
+
+            &:hover {
+                background: #260000;
+            }
+
+            &:active {
+                background-color: #480000;
+                transform: scale(.99);
+            }
+
+            &:focus {
+                background-color: #480000;
+            }
+        }
+    }
+
+    .product-image {
+        width: 100%;
+        height: 150px;
+        background: rgba(0,0,0,.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 4px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
